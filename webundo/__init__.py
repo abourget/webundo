@@ -7,7 +7,6 @@ other web frameworks.
 Here is a sample Pylons controller (called 'th', who knows why)::
 
 .. code-block:: python
-
     from pylons import request, response, session, tmpl_context as c
     from YOURPROJECT.lib.base import BaseController, render
 
@@ -32,7 +31,6 @@ Here is a sample Pylons controller (called 'th', who knows why)::
             else:
                 return "Too late, thread finished already."
 
-
         def publish(self):
             req = request
             def unpublish():
@@ -49,12 +47,6 @@ Here is a sample Pylons controller (called 'th', who knows why)::
             except webundo.ThreadLostError, e:
                 return "Thread was lost already"
             return "Undone: %s" % ret
-
-
-This would be the HTML files used in the example:
-
-.. code-block:: html
-
 
 
 """

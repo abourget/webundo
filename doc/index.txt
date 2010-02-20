@@ -6,6 +6,12 @@
 Welcome to WebUndo's documentation!
 ===================================
 
+.. Commented imports
+
+   >>> import webundo
+
+.. automodule:: webundo
+
 Contents:
 
 .. toctree::
