@@ -1,2 +1,5 @@
 *pyc
 *~
+doc/_build
+dist/
+WebUndo.egg-info/
