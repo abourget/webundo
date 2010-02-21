@@ -11,6 +11,7 @@ Welcome to WebUndo's documentation!
    >>> import webundo
 
 .. automodule:: webundo
+   :members:
 
 Contents:
 
