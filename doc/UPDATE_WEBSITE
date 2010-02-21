@@ -1,0 +1,1 @@
+scp -r _build/html/* user@site:/var/www/webundo.abourget.net/
