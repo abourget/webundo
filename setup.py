@@ -1,9 +1,9 @@
 try:
-    from setuptools import setup, find_packages
+    from setuptools import setup
 except ImportError:
     from distribute_setup import use_setuptools
     use_setuptools()
-    from setuptools import setup, find_packages
+    from setuptools import setup
 
 setup(
     name='WebUndo',
@@ -11,10 +11,9 @@ setup(
     description="Gmail's undo/cancel web feature, for Pylons and other frameworks",
     author='Alexandre Bourget',
     author_email='alex@bourget.cc',
-    url='http://blog.abourget.net',
+    url='http://webundo.abourget.net',
     install_requires=[],
-    packages=find_packages(exclude=['distribute_setup']),
-    include_package_data=True,
+    packages=['webundo'],
     zip_safe=False,
     entry_points="""
     """,
