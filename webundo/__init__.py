@@ -49,7 +49,25 @@ Here is a sample Pylons controller (called 'th', who knows why):
                 return "Thread was lost already"
             return "Undone: %s" % ret
 
-This shows off a `cancelable job` and an `undoable job`.  Each require
+With ``th.mako`` being:
+
+.. code-block:: html
+
+    <p>Save something, with cancel support:</p>
+    <form action="${h.url_for(controller='th', action='save')}" id="" method="post">
+      <input type="text" name="stuff" value="somevalue" />
+      <input type="submit" name="" value="SEND" />
+    </form>
+
+    <p>Publish something, with undo support:</p>
+    <form action="${h.url_for(controller='th', action='publish')}" id="" method="post">
+      <input type="text" name="stuff" value="somevalue" />
+      <input type="submit" name="" value="SEND" />
+    </form>
+
+
+This shows off a `cancelable job` and an `undoable job`.  See the `original blog
+post <http://blog.abourget.net/2010/2/20/gmail-undo-cancel-feature-introducing-python-webundo>`_ for more details.
 
 """
 import threading
